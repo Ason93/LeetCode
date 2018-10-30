@@ -54,7 +54,7 @@ class Stack:
 
     # @return nothing
     def pop(self):
-        self.q_.pop()
+        return self.q_.pop()
 
     # @return an integer
     def top(self):
@@ -84,7 +84,7 @@ class Stack2:
         for _ in xrange(self.q_.size() - 1):
             self.top_ = self.q_.pop()
             self.q_.push(self.top_)
-        self.q_.pop()
+        return self.q_.pop()
 
     # @return an integer
     def top(self):
